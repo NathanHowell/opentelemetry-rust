@@ -4,10 +4,10 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-opentelemetry = { path = "../../opentelemetry" }
-opentelemetry-jaeger = { path = "../../opentelemetry-jaeger" }
+opentelemetry = { path = "../../opentelemetry", version = "0.12.0" }
+opentelemetry-jaeger = { path = "../../opentelemetry-jaeger", version = "0.11.0" }
 thrift = "0.13"
 futures = "0.3"
 actix-web = "3"
 actix-service = "1"
-env_logger = "0.8.2"
+env_logger = "0.8"

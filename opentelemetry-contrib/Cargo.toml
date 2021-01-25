@@ -36,12 +36,12 @@ opentelemetry-http = { version = "0.1", path = "../opentelemetry-http", optional
 rmp = { version = "0.8", optional = true }
 lazy_static = "1.4"
 reqwest = { version = "0.11", optional = true }
-surf = { version = "2.0", optional = true }
+surf = { version = "2.1", optional = true }
 http = "0.2"
 base64 = { version = "0.13", optional = true }
-thiserror = { version = "1.0", optional = true }
+thiserror = { version = "1", optional = true }
 
 [dev-dependencies]
 base64 = "0.13"
-isahc = "0.9"
+isahc = "1"
 opentelemetry = { path = "../opentelemetry", features = ["trace", "testing"] }

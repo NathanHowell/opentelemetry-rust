@@ -13,11 +13,11 @@ path = "src/client.rs"
 
 [dependencies]
 http = "0.2"
-tonic = "0.3"
-prost = "0.6"
-tokio = { version = "1.0", features = ["full"] }
-opentelemetry = { path = "../../opentelemetry" }
-opentelemetry-jaeger = { path = "../../opentelemetry-jaeger" }
+tonic = "0.4"
+prost = "0.7"
+tokio = { version = "1", features = ["full"] }
+opentelemetry = { path = "../../opentelemetry", version = "0.12" }
+opentelemetry-jaeger = { path = "../../opentelemetry-jaeger", version = "0.11.0" }
 
 [build-dependencies]
-tonic-build = "0.3"
+tonic-build = "0.4"

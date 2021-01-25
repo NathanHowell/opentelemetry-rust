@@ -35,10 +35,10 @@ futures = "0.3"
 grpcio = { version = "0.7", optional = true }
 opentelemetry = { version = "0.12", default-features = false, features = ["trace"], path = "../opentelemetry" }
 prost = { version = "0.7", optional = true }
-protobuf = { version = "2.18", optional = true }
+protobuf = { version = "2.20", optional = true }
 thiserror = "1.0"
 tonic = { version = "0.4", optional = true }
-tokio = { version = "1.0", features = ["full"], optional = true }
+tokio = { version = "1", features = ["full"], optional = true }
 
 [dev-dependencies]
 chrono = "0.4"
@@ -57,6 +57,6 @@ openssl-vendored = ["grpcio/openssl-vendored"]
 integration-testing = ["tonic", "tonic-build", "prost", "tokio/full", "opentelemetry/trace"]
 
 [build-dependencies]
-protobuf-codegen = { version = "2.16", optional = true }
-protoc-grpcio = { version = "2.0", optional = true }
-tonic-build = { version = "0.3", optional = true }
+protobuf-codegen = { version = "2.20", optional = true }
+protoc-grpcio = { version = "3.0", optional = true }
+tonic-build = { version = "0.4", optional = true }
